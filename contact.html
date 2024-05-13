@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Greg Restaurant , Ksamil , Albania</title>
-    <meta name="description" content="For any inquiries, reservations, or assistance, feel free to reach out to our friendly team at Greg Restaurant in Ksamil, Albania. ">
-    <meta name="keywords" content="Contact - Greg Restaurant , Ksamil , Albania , Restaurant  , Near Beach , Bar , Contact , Information ,  Summer , Vaccation , Cuisine ">
+    <meta name="description"
+        content="For any inquiries, reservations, or assistance, feel free to reach out to our friendly team at Greg Restaurant in Ksamil, Albania. ">
+    <meta name="keywords"
+        content="Contact - Greg Restaurant , Ksamil , Albania , Restaurant  , Near Beach , Bar , Contact , Information ,  Summer , Vaccation , Cuisine ">
     <meta name="google-site-verification" content="VBBXbdI32-JaBuuOkWz5NeAeNk-Iu5e2lK04XvJz4yU" />
     <link rel="icon" href="assets/icon/logo-black.png" />
     <!--Font-Awasome-->
@@ -19,7 +20,6 @@
     <!--My Style-->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg  header-nav  fixed-top ">
@@ -147,7 +147,9 @@
                                         <img src="assets/icon/logo-white.png" width="120px">
                                     </a>
                                 </h2>
-                                <p>Embark on a journey of comfort and hospitality at our serene retreat in Ksamil. Experience the essence of Albanian hospitality as you create cherished memories in our tranquil oasis.</p>
+                                <p>Embark on a journey of comfort and hospitality at our serene retreat in Ksamil.
+                                    Experience the essence of Albanian hospitality as you create cherished memories in
+                                    our tranquil oasis.</p>
                                 </p>
                             </div>
                         </div>
@@ -161,8 +163,9 @@
                                 <li><i class="fas fa-phone" style="color:white;"></i><a href="tel:+355692124978"
                                         class="text-white m-0 p-0" style="text-decoration: none;">+355 (0)
                                         692124978</a>
-                                <li> <i class="fas fa-envelope" style="color: white;"></i><a href="mailto: greg.restaurant.ks@gmail.com"
-                                        class="text-white m-0 p-0" style="text-decoration: none;">
+                                <li> <i class="fas fa-envelope" style="color: white;"></i><a
+                                        href="mailto: greg.restaurant.ks@gmail.com" class="text-white m-0 p-0"
+                                        style="text-decoration: none;">
                                         greg.restaurant.ks@gmail.com</a></li>
                             </ul>
                         </div>
@@ -236,74 +239,73 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
-        <script>
-            const elements = document.querySelectorAll('.fadeinleft');
-            const elements1 = document.querySelectorAll('.fade-in');
-            const elements2 = document.querySelectorAll('.fadeinright');
-            const elements3 = document.querySelectorAll('.fadeindown');
-            const elements4 = document.querySelectorAll('.fadeinup');
-            const options = {
-                root: null,
-                rootMargin: '0px',
-                threshold: .4
-            }
-            const callbacks = (entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active-left');
-                    }
-                });
-            }
-            const callbacks1 = (entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                    }
-                });
-            }
-            const callbacks2 = (entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active-right');
-                    }
-                });
-            }
-            const callbacks3 = (entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active-down');
-                    }
-                });
-            }
-            const callbacks4 = (entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active-up');
-                    }
-                });
-            }
-            let observer = new IntersectionObserver(callbacks, options);
-            let observer1 = new IntersectionObserver(callbacks1, options);
-            let observer2 = new IntersectionObserver(callbacks2, options);
-            let observer3 = new IntersectionObserver(callbacks3, options);
-            let observer4 = new IntersectionObserver(callbacks4, options);
-            elements.forEach(elements => {
-                observer.observe(elements);
-            })
-            elements1.forEach(elements1 => {
-                observer1.observe(elements1);
-            })
-            elements2.forEach(elements2 => {
-                observer2.observe(elements2);
-            })
-            elements3.forEach(elements3 => {
-                observer3.observe(elements3);
-            })
-            elements4.forEach(elements4 => {
-                observer4.observe(elements4);
-            })
-        </script>
-    
+    <script>
+        const elements = document.querySelectorAll('.fadeinleft');
+        const elements1 = document.querySelectorAll('.fade-in');
+        const elements2 = document.querySelectorAll('.fadeinright');
+        const elements3 = document.querySelectorAll('.fadeindown');
+        const elements4 = document.querySelectorAll('.fadeinup');
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: .4
+        }
+        const callbacks = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active-left');
+                }
+            });
+        }
+        const callbacks1 = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }
+        const callbacks2 = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active-right');
+                }
+            });
+        }
+        const callbacks3 = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active-down');
+                }
+            });
+        }
+        const callbacks4 = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active-up');
+                }
+            });
+        }
+        let observer = new IntersectionObserver(callbacks, options);
+        let observer1 = new IntersectionObserver(callbacks1, options);
+        let observer2 = new IntersectionObserver(callbacks2, options);
+        let observer3 = new IntersectionObserver(callbacks3, options);
+        let observer4 = new IntersectionObserver(callbacks4, options);
+        elements.forEach(elements => {
+            observer.observe(elements);
+        })
+        elements1.forEach(elements1 => {
+            observer1.observe(elements1);
+        })
+        elements2.forEach(elements2 => {
+            observer2.observe(elements2);
+        })
+        elements3.forEach(elements3 => {
+            observer3.observe(elements3);
+        })
+        elements4.forEach(elements4 => {
+            observer4.observe(elements4);
+        })
+    </script>
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
@@ -313,5 +315,4 @@
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

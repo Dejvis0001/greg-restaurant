@@ -534,7 +534,7 @@ ul.link_menu li a:hover {
     top: -130px;
 }
 .s-menu>img.item-left {
-    left: 775px;
+    left: 1000px;
     top: -130px;
     position: relative;
 }
@@ -1155,7 +1155,10 @@ ul.link_menu li a:hover {
     line-height: 1;
     margin-bottom: 18px;
 }
-.s-menu.p-list div.container div.row div.menu-content div.block-text.text-center.fadeinup.active-up p.subtitle::before,.s-menu.p-list div.container div.row div.menu-content div.block-text.text-center.fadeinup.active-up p.subtitle::after{background-color: white;}
+.s-menu.p-list div.container div.row div.menu-content div.block-text.text-center.fadeinup.active-up p.subtitle::before,
+.s-menu.p-list div.container div.row div.menu-content div.block-text.text-center.fadeinup.active-up p.subtitle::after {
+    background-color: white;
+}
 .s-menu-list {
     background: #0e1927;
     padding: 144px 0 0;
@@ -1447,6 +1450,45 @@ button#btn-back-to-top.btn.btn-floating i.fas.fa-arrow-up {
     }
 }
 @media only screen and (max-width: 1200px) {
+    #contact-head,
+    #gallery-head,
+    #menu-head,
+    #about-head,
+    .s-gallery,
+    .event,
+    .s-services,
+    .about-restaurant {
+        overflow: hidden;
+    }
+    #contact-head h1,
+    #gallery-head h1,
+    #menu-head h1,
+    #about-head h1 {
+        margin-top: 100px;
+    }
+    .s-menu>img.item-left,
+    .s-menu>img.item-right {
+        display: none;
+    }
+    .mySwiper .box-slider .content-box .title {
+        font-size: 25px !important;
+        line-height: unset !important;
+    }
+    .mySwiper .box-slider .content-box.style-2 .sub-title {
+        display: none;
+    }
+    .about-restaurant .about-restaurant-main .content .title {
+        font-size: 29px !important;
+    }
+    .s-order {
+        padding-top: 0px !important;
+    }
+    .box-slider {
+        margin-top: 100px;
+    }
+    .mySwiper {
+        height: 75vh !important;
+    }
     html body main section div.block-text.text-center h3.title {
         font-size: 22px;
     }
