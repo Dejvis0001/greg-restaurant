@@ -83,34 +83,29 @@ button {
     background: #333;
     border: none;
     color: #fff;
-  }
-  
-  button:hover {
+}
+button:hover {
     letter-spacing: 0.25em;
     background: #e6c9a2;
     color: #e6c9a2;
     box-shadow: 0 0 45px #e6c9a2;
-  }
-  
-  button::before {
+}
+button::before {
     content: '';
     position: absolute;
     inset: 2px;
     background: #222222;
-  }
-  
-  button span {
+}
+button span {
     position: relative;
     z-index: 1;
-  }
-  
-  button i {
+}
+button i {
     position: absolute;
     inset: 0;
     display: block;
-  }
-  
-  button i::before {
+}
+button i::before {
     content: '';
     position: absolute;
     border: 2px solid #e6c9a2;
@@ -121,14 +116,12 @@ button {
     background: #222222;
     transform: translateX(-50%);
     transition: 0.5s;
-  }
-  
-  button:hover i::before {
+}
+button:hover i::before {
     width: 20px;
     left: 20%;
-  }
-  
-  button i::after {
+}
+button i::after {
     content: '';
     position: absolute;
     border: 2px solid #e6c9a2;
@@ -139,12 +132,11 @@ button {
     background: #222222;
     transform: translateX(-50%);
     transition: 0.5s;
-  }
-  
-  button:hover i::after {
+}
+button:hover i::after {
     width: 20px;
     left: 80%;
-  }  
+}
 /*BACK_TO_TOP*/
 #btn-back-to-top {
     position: fixed;
@@ -547,7 +539,7 @@ ul.link_menu li a:hover {
     position: relative;
 }
 .ttt {
-    margin-top: -325px;
+    margin-top: -425px;
 }
 .menu-content .menu-main .list-img {
     width: 50%;
@@ -757,7 +749,7 @@ ul.link_menu li a:hover {
 }
 .s-book .book-content {
     width: 50%;
-    background: url(assets/image/90.jpg) no-repeat;
+    background: url(assets/image/90.png) no-repeat;
     background-position-x: 0%;
     background-position-y: 0%;
     background-size: auto;
@@ -767,7 +759,7 @@ ul.link_menu li a:hover {
     padding: 130px 15px 130px;
 }
 .s-book .book-content:last-child {
-    background: url(assets/image/91.jpg) no-repeat;
+    background: url(assets/image/91.png) no-repeat;
     background-position-x: 0%;
     background-position-y: 0%;
     background-size: auto;
@@ -915,7 +907,7 @@ ul.link_menu li a:hover {
 }
 /*About Us*/
 #about-head {
-    background: url(assets/image/79.jpg) rgba(0, 0, 0, 0.5);
+    background: url(assets/image/79.png) rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -927,7 +919,7 @@ ul.link_menu li a:hover {
 }
 /*Gallery*/
 #gallery-head {
-    background: url(assets/image/13.jpg) rgba(0, 0, 0, 0.5);
+    background: url(assets/image/13.png) rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -995,10 +987,13 @@ ul.link_menu li a:hover {
     color: #e6c9a2;
     font-size: 33px;
 }
-.s-gallery div.container div.gallery-main div.row div.col-md-4 div.gallery-box{width: 100%;margin: 25px;}
+.s-gallery div.container div.gallery-main div.row div.col-md-4 div.gallery-box {
+    width: 100%;
+    margin: 25px;
+}
 /*Contact Us*/
 #contact-head {
-    background: url(assets/image/45.jpg) rgba(0, 0, 0, 0.5);
+    background: url(assets/image/45.png) rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1101,9 +1096,46 @@ ul.link_menu li a:hover {
     line-height: 30px;
     margin-bottom: 5px;
 }
+/*Animation*/
+.fadeinleft {
+    opacity: 0;
+    transform: translateX(200px);
+    transition: all 1.3s ease-out;
+}
+.fadeinright {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 0.8s ease-out;
+}
+.fadeindown {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 1.2s ease-out;
+}
+.fadeinup {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.2s ease-out;
+}
+.fade-in {
+    opacity: 0;
+    transition: all 1.3s ease-in;
+}
+.active-left,
+.active,
+.active-right,
+.active-down,
+.active-up {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+}
+.fadein {
+    opacity: 0;
+}
 /*Menu*/
 #menu-head {
-    background: url(assets/image/8.jpg) rgba(0, 0, 0, 0.5);
+    background: url(assets/image/8.png) rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1123,24 +1155,7 @@ ul.link_menu li a:hover {
     line-height: 1;
     margin-bottom: 18px;
 }
-.s-menu-list div.container div.row div.menu-content div.block-text.text-center.style-2 p.subtitle::after {
-    content: "";
-    position: absolute;
-    top: 13px;
-    right: -76px;
-    width: 63px;
-    height: 1px;
-    background: #e6c9a2;
-}
-.s-menu-list div.container div.row div.menu-content div.block-text.text-center.style-2 p.subtitle::before {
-    content: "";
-    position: absolute;
-    top: 13px;
-    left: -76px;
-    width: 63px;
-    height: 1px;
-    background: #e6c9a2;
-}
+.s-menu.p-list div.container div.row div.menu-content div.block-text.text-center.fadeinup.active-up p.subtitle::before,.s-menu.p-list div.container div.row div.menu-content div.block-text.text-center.fadeinup.active-up p.subtitle::after{background-color: white;}
 .s-menu-list {
     background: #0e1927;
     padding: 144px 0 0;
@@ -1432,14 +1447,31 @@ button#btn-back-to-top.btn.btn-floating i.fas.fa-arrow-up {
     }
 }
 @media only screen and (max-width: 1200px) {
-    html body main section div.block-text.text-center h3.title{font-size: 22px;}
-    html body main section div.block-text.text-center p.text{font-size: 19px;padding: 0px 20px 0px 20px}
-    .s-gallery div.container div.gallery-main div.row div.col-md-4 div.gallery-box{margin:0 0 20px 0;}
-    html body main section.s-gallery{padding-top: unset;}
-    html body main section.s-menu.p-list{overflow: hidden;padding-top: 50px;}
-    html body main section.s-menu-list{overflow-x: hidden;padding-top: 50px;    }
-    .s-menu-list .portfolio-main{margin: 100px 0 50px;}
-        .s-order {
+    html body main section div.block-text.text-center h3.title {
+        font-size: 22px;
+    }
+    html body main section div.block-text.text-center p.text {
+        font-size: 19px;
+        padding: 0px 20px 0px 20px
+    }
+    .s-gallery div.container div.gallery-main div.row div.col-md-4 div.gallery-box {
+        margin: 0 0 20px 0;
+    }
+    html body main section.s-gallery {
+        padding-top: unset;
+    }
+    html body main section.s-menu.p-list {
+        overflow: hidden;
+        padding-top: 50px;
+    }
+    html body main section.s-menu-list {
+        overflow-x: hidden;
+        padding-top: 50px;
+    }
+    .s-menu-list .portfolio-main {
+        margin: 100px 0 50px;
+    }
+    .s-order {
         overflow: hidden;
     }
     #contact-head h1::before,
